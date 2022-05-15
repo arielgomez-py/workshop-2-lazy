@@ -2,3 +2,12 @@
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
 
+.container{
+    width: 320px;
+    background-color: gray;
+    margin: 10px auto auto;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+}
