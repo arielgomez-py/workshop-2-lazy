@@ -8,6 +8,11 @@ const loadImage = (entry) => {
     const imagen = container.firstChild;
     const url = imagen.dataset.src;
     imagen.src = url;
+    //const loadedImages = [];
+    //loadedImages.push(imagen);
+    //console.log(loadedImages.length);
+   
+    
     //desregistra la imagen (unlisten)
     observer.unobserve(container);
 };
