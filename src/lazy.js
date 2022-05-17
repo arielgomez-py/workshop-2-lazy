@@ -3,17 +3,15 @@ const isIntersecting = (entry) => {
     return entry.isIntersecting; // true dentro de la pantalla
 };
 
+let countImage = 0;  //counter of images loaded
 const loadImage = (entry) => {
     const container = entry.target;
     const imagen = container.firstChild;
     const url = imagen.dataset.src;
     imagen.src = url;
-    //const loadedImages = [];
-    //loadedImages.push(imagen);
-    //console.log(loadedImages.length);
-   
-    
-    //desregistra la imagen (unlisten)
+
+    console.log(`📌Images loaded ${countImage ++}`);
+    //  desregistra la imagen (unlisten)
     observer.unobserve(container);
 };
 

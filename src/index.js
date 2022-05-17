@@ -35,8 +35,11 @@ const addImage = () => {
     mountNode.append(newImage);
     registerImage(newImage);
     //Show in console the quanity of 
+    
     const addedImages = document.querySelectorAll('.imagen');
-    console.log(`🔵Total de imagenes: ${addedImages.length}`);
+    console.log(`🔵Image added: ${addedImages.length}`);
+   
+    
 };
 
 //remove all images
